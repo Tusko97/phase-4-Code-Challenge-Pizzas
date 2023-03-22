@@ -1,24 +1,54 @@
-# README
+# Pizzas Restaurants API
+This is a pizzas restaurants Rails backend API built using the Rails framework.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Project Description
+This project API is purposely for tracking pizzas restaurants.It has the following resources:
 
-Things you may want to cover:
+# Restaurants
+# Pizzas
+# Restaurant_pizzas(this is the joint table for pizzas and restaurants)
+# Database Relationships
+This Rails API utilizes a many-to-many relationships approach. A restaurant has many pizzas and a pizza has many restaurants. The RestaurantPizza belongs to both Restaurant and Pizza therefore acts as the joint table for the two models.
 
-* Ruby version
+# Requirements
+Access to a computer,tablet or phone.
+An access to internet.
+# Deployment
+To access the API click on the deployed link: "https://pizzasforlife.onrender.com/restaurants"
 
-* System dependencies
+# Installation
+To use this API, you must have installed:
 
-* Configuration
+ruby -v 2.7.4
+rails -v 7.0.4.3
+Postgress installed on your computer/laptop.
+Follow the steps below to install the Api:
+Clone the repository
 
-* Database creation
+git clone : "https://github.com/Tusko97/phase-4-Code-Challenge-Pizzas/tree/master"
 
-* Database initialization
+# bundle install to install dependencies
 
-* How to run the test suite
+# Set up the database: rails db:migrate rails db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+# Start the server: rails s Once the server is up and runnning, you should be able to access the API at https://localhost:3000.
 
-* Deployment instructions
+With the server running, you can use your preferred API platform such as Postman or Thunder client to try out the CRUD operations (GET, POST, and DELETE) using the provided faker data. Specifically, the API provides for the following CRUD operations
 
-* ...
+GET /restaurants
+GET /restaurants/:id
+DELETE /restaurants/:id
+GET /pizzas
+POST /restaurant_pizzas
+Technologies Used
+Ruby
+Rails
+SQL
+Git
+
+
+# Authors
+Mark Mutuku [tusko97]
+
+# LICENSE
+This project is under MIT License
